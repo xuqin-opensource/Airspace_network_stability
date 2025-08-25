@@ -72,7 +72,7 @@ def is_airport_congestion(self, airport_id):
 
 - **替代机场选择**：
 ```
-  def find_alternative_airport(self, origin_airport_id):
+def find_alternative_airport(self, origin_airport_id):
     # 基于负载评分选择最不繁忙的可用机场
     load_score = 0.7 * parking_util + 0.3 * (queue_length / 10)
 ```
